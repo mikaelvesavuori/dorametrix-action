@@ -6,7 +6,7 @@
 # commits between the latest production deployment and the current commit.
 # The latest deploy SHA is retrieved from the Dorametrix service.
 #
-# JSON solution based on: https://gist.github.com/textarcana/1306223
+# JSON solution based on comments in: https://gist.github.com/varemenos/e95c2e098e657c7688fd
 #
 
 echo "✨ Running Dorametrix deployment event script..."
