@@ -1,0 +1,19 @@
+{
+  "name": "dorametrix-action",
+  "version": "0.0.1",
+  "description": "Conveniently create a deployment event in Dorametrix.",
+  "main": "deployment.sh",
+  "homepage": "https://github.com/mikaelvesavuori/dorametrix-action",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikaelvesavuori/dorametrix-action.git"
+  },
+  "author": "Mikael Vesavuori",
+  "keywords": [
+    "dorametrix"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "clean": "bash deployment.sh"
+  }
+}
