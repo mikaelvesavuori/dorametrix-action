@@ -10,7 +10,11 @@
   },
   "author": "Mikael Vesavuori",
   "keywords": [
-    "dorametrix"
+    "dorametrix",
+    "dora",
+    "dora-metrics",
+    "devops",
+    "software-delivery"
   ],
   "license": "MIT",
   "scripts": {
