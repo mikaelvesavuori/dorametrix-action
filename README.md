@@ -9,8 +9,7 @@ You need to set two required secrets: `DORAMETRIX_ENDPOINT` and `DORAMETRIX_API_
 ### Remember...
 
 - Always ensure you have secure settings regarding what actions you allow.
-
-- Note that Dorametrix will _not_ work without access to the Git history.
+- Note that Dorametrix will _not_ work without access to the Git history (i.e. `with.fetch-depth: 0`).
 
 ## Required input and output arguments
 
