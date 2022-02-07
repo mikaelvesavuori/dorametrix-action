@@ -4,7 +4,13 @@ Conveniently call [Dorametrix](https://github.com/mikaelvesavuori/dorametrix) to
 
 ## Setup and usage
 
-You need to set two required secrets: `DORAMETRIX_ENDPOINT` and `DORAMETRIX_API_KEY`.
+You need to set two required secrets: `DORAMETRIX_ENDPOINT` and `DORAMETRIX_API_KEY` in accordance with the overall [Dorametrix](https://github.com/mikaelvesavuori/dorametrix) requirements.
+
+### Remember...
+
+- Always ensure you have secure settings regarding what actions you allow.
+
+- Note that Dorametrix will _not_ work without access to the Git history.
 
 ## Required input and output arguments
 
@@ -40,9 +46,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Dorametrix
     steps:
-      - uses: actions/checkout@v2
-      - id: dorametrix
-        uses: mikaelvesavuori/dorametrix-action@v1.0.0
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: dorametrix
+        uses: mikaelvesavuori/dorametrix-action@v1
         with:
           endpoint: ${{ secrets.DORAMETRIX_ENDPOINT }}
           api-key: ${{ secrets.DORAMETRIX_API_KEY }}
