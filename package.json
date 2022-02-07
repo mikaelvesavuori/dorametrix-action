@@ -18,6 +18,6 @@
   ],
   "license": "MIT",
   "scripts": {
-    "clean": "bash deployment.sh"
+    "deploy": "bash deployment.sh"
   }
 }

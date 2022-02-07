@@ -4,7 +4,7 @@ Conveniently call [Dorametrix](https://github.com/mikaelvesavuori/dorametrix) to
 
 ## Setup and usage
 
-You need to set two required secrets—`ENDPOINT` and `API_KEY`—and, optionally, a secret `PRODUCT` name if you don't want to use the repository name.
+You need to set two required secrets: `DORAMETRIX_ENDPOINT` and `DORAMETRIX_API_KEY`.
 
 ## Required input and output arguments
 
