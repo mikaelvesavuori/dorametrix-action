@@ -19,5 +19,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./
-          tags: ghcr.io/mikaelvesavuori/dorametrix-pipe:1.0.0
+          tags: |
+            mikaelvesavuori/dorametrix-pipe:1.0.0
+            ghcr.io/mikaelvesavuori/dorametrix-pipe:1.0.0
           push: ${{ github.ref == 'refs/heads/main' }}
