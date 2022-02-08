@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #
 # DORAMETRIX: SCRIPT FOR DEPLOYMENT EVENTS
 # https://github.com/mikaelvesavuori/dorametrix
@@ -9,17 +11,19 @@
 # JSON solution based on comments in: https://gist.github.com/varemenos/e95c2e098e657c7688fd
 #
 
+set -e pipefail
+
 echo "✨ Running Dorametrix deployment event script..."
 
 # Set variables
-ENDPOINT="$1" # Input from user when calling the action
+if [ -z "$ENDPOINT" ]; then ENDPOINT="$1"; fi # Input from user when calling the action
 echo "ℹ️ ENDPOINT --> $ENDPOINT"
 if [ -z "$ENDPOINT" ]; then echo "Dorametrix error: ENDPOINT is not set! Exiting..." && exit 1; fi
 
-API_KEY="$2" # Input from user when calling the action
+if [ -z "$API_KEY" ]; then API_KEY="$2"; fi # Input from user when calling the action
 if [ -z "$API_KEY" ]; then echo "Dorametrix error: API_KEY is not set! Exiting..." && exit 1; fi
 
-PRODUCT="$3" # Input from user when calling the action
+if [ -z "$PRODUCT" ]; then PRODUCT="$3"; fi # Input from user when calling the action
 echo "ℹ️ PRODUCT --> $PRODUCT"
 if [ -z "$PRODUCT" ]; then echo "Dorametrix error: PRODUCT is not set! Exiting..." && exit 1; fi
 
