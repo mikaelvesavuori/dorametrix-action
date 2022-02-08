@@ -2,6 +2,8 @@
 
 Conveniently call [Dorametrix](https://github.com/mikaelvesavuori/dorametrix) to create a deployment event.
 
+Looking for a demo? In that case you might be interested in the [Dorametrix Pipe demo](https://github.com/mikaelvesavuori/demo-dorametrix-pipe).
+
 ## Setup and usage
 
 You need to set two required secrets—`DORAMETRIX_ENDPOINT` and `DORAMETRIX_API_KEY`—in accordance with the overall [Dorametrix](https://github.com/mikaelvesavuori/dorametrix) requirements.
