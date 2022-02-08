@@ -8,7 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Login to Github Packages
+      - name: Login to GitHub Packages
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
@@ -19,6 +19,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./
-          tags: |
-            ghcr.io/mikaelvesavuori/dorametrix-pipe:1.0.0
+          tags: ghcr.io/mikaelvesavuori/dorametrix-pipe:1.0.0
           push: ${{ github.ref == 'refs/heads/main' }}
