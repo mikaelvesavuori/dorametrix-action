@@ -18,6 +18,7 @@ jobs:
       - name: Build and push image to GitHub Container Registry
         uses: docker/build-push-action@v2
         with:
+          context: ./
           tags: |
             ghcr.io/mikaelvesavuori/dorametrix-pipe:1.0.0
           push: ${{ github.ref == 'refs/heads/main' }}
