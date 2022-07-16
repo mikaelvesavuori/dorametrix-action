@@ -1,8 +1,8 @@
 name: 'Dorametrix'
 description: 'Conveniently create a deployment event in Dorametrix'
 branding:
-  icon: 'package'
-  color: 'green'
+  icon: 'bar-chart-2'
+  color: 'black'
 inputs:
   endpoint:
     description: 'Dorametrix API endpoint, in the format: "https://mydomain.com/stagename"'
