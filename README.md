@@ -53,7 +53,7 @@ jobs:
           fetch-depth: 0
 
       - name: dorametrix
-        uses: mikaelvesavuori/dorametrix-action@v1.0.1
+        uses: mikaelvesavuori/dorametrix-action@v3
         with:
           endpoint: ${{ secrets.DORAMETRIX_ENDPOINT }}
           api-key: ${{ secrets.DORAMETRIX_API_KEY }}
